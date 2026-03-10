@@ -1,0 +1,23 @@
+{
+  "name": "mcp-multiplexer",
+  "version": "1.0.0",
+  "description": "Lazy-spawning MCP multiplexer — presents all backend tools natively, spawns servers on demand, evicts idle ones",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-multiplexer": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  }
+}
