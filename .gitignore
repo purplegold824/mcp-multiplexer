@@ -1,3 +1,9 @@
 node_modules/
 dist/
 *.tsbuildinfo
+.terraform/
+terraform/.terraform/
+terraform/.build/
+terraform/tfplan
+terraform/*.tfstate*
+lambda/dist/
