@@ -122,7 +122,7 @@ export function saveCatalogCache(
 
 export function loadCatalogCache(
   cachePath: string,
-  maxAgeMs: number = 3600_000 // 1 hour
+  maxAgeMs: number = 7 * 24 * 3600_000 // 7 days
 ): {
   catalog: Map<string, ToolCatalogEntry>;
   serverTools: Map<string, string[]>;
